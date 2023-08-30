@@ -44,7 +44,7 @@ def main(FLAGS):
 
     print('tensorflow version: ' +  tf.__version__)
     print(tf.version.GIT_VERSION, tf.version.VERSION)
-    dirName = os.path.dirname(os.path.abspath(__file__)) +'\\MSLB0'
+    dirName = os.path.dirname(os.path.abspath(__file__)) +'/MSLB0'
         
     # Get the list of all files in directory tree at given path
     listOfFiles = input_data.getListOfFiles(dirName)
