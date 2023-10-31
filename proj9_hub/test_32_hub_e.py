@@ -110,7 +110,7 @@ def main(FLAGS):
         
     vadModel = tf.keras.models.load_model('../saved_model/my_model_31.keras')
    
-    #print('model length = ', len(vadModel.weights))
+    print('model length = ', len(vadModel.weights))
     
     print(vadModel.summary())
     #plot_model(vadModel, to_file = "logs/scalars/" + 'model108.png')
