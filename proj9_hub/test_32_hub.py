@@ -103,12 +103,12 @@ def main(FLAGS):
  
     #vad = input_data.inputBatch(trn_sizes)     
     vad = inputBatch(trn_sizes)  
-    #vadModel = create_model(trn_sizes)
+    vadModel = create_model(trn_sizes)
     #vadModel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
-    #vadModel.build(input_shape = [None, 10, trn_sizes.cepsTone])
+    vadModel.build(input_shape = [None, 10, trn_sizes.cepsTone])
         
-    vadModel = tf.keras.models.load_model('/content/best_on_batch_bug/tree/main/proj9_hub/saved_model/my_model_31.keras')
+    #vadModel = tf.keras.models.load_model('/content/best_on_batch_bug/tree/main/proj9_hub/saved_model/my_model_31.keras')
    
     print('model length = ', len(vadModel.weights))
     
@@ -146,7 +146,7 @@ def main(FLAGS):
         #print('string logs = ', str(logs[0:3]))  # for printing prediction result
         #tensorboard.on_batch_end(i, named_logs(vadModel, [logs]))
         
-        
+    vadModel.save("saved_model/my_model_32.keras");         
     tensorboard.on_test_end(None)
             
     print("test is done!")
