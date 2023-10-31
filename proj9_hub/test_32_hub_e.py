@@ -102,7 +102,7 @@ def main(FLAGS):
     random.seed(11)
  
     #vad = input_data.inputBatch(trn_sizes)     
-    vad = inputBatch(trn_sizes)  
+    #vad = inputBatch(trn_sizes)  
     #vadModel = create_model(trn_sizes)
     #vadModel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
