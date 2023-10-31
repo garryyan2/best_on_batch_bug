@@ -108,7 +108,7 @@ def main(FLAGS):
 
     #vadModel.build(input_shape = [None, 10, trn_sizes.cepsTone])
         
-    vadModel = tf.keras.models.load_model('../saved_model/my_model_32.keras')
+    vadModel = tf.keras.models.load_model('../saved_model/my_model_33.keras')
    
     print('model length = ', len(vadModel.weights))
     
