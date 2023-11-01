@@ -146,7 +146,7 @@ def main(FLAGS):
         #print('string logs = ', str(logs[0:3]))
         #tensorboard.on_batch_end(i, named_logs(vadModel, [logs]))
         
-    vadModel.save("saved_model/my_model_tmp1.keras");         
+    #vadModel.save("saved_model/my_model_tmp1.keras");         
     #tensorboard.on_test_end(None)
             
     print("test is done!")
